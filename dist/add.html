@@ -44,8 +44,38 @@
         </header>
 
         <main>
-            <div id="main-container">
-       
+            <div id="container-form">
+                <form method="post" action="/">
+                    <h2>Lägg till kurs</h2>
+                    <label for="companyname">Company name:&nbsp;</label>
+                    <input type="text" name="companyname" id="companyname" value="<%= coursecode %>">
+                    <label for="jobtitle">jobtitle:</label>
+                    <input type="text" name="jobtitle" id="jobtitle" value="<%= coursename %>">
+                    <label for="location">location:&nbsp;</label>
+                    <input type="text" name="location" id="location" value="<%= coursecode %>">
+                    <label for="startdate">Startdate:</label>
+                    <input type="date" id="startdate" name="startdate">
+                    <label for="enddate">Enddate:</label>
+                    <input type="date" id="enddate" name="enddate">
+
+                    <label for="description">description:</label>
+                    <input type="text" name="description" id="description" value="<%= coursename %>">
+
+                    <input type="submit" value="Lägg till kurs" id="submit">
+
+                </form>
+   
+            </div>
+            <div id="container-error">
+
+            <% if(locals.errors.length > 0) { %>
+                <ul>
+              <%  errors.forEach((error) => { %>
+                <li> <%= error %>
+                </li>
+                <% }); %>
+            </ul>
+                <% } %>
             </div>
         </main>
 
