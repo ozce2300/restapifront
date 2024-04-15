@@ -35,6 +35,19 @@ header {
     gap: 20PX;
 }
 
+#articleId {
+    border: 2px greenyellow solid;
+    padding: 5%;
+    max-width: 500px;
+    margin-bottom: 30px;
+
+
+}
+
+p{
+    line-height: 20px;
+}
+
 #ul-main {
     list-style-type: none;
     padding: 0;

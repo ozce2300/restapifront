@@ -1,4 +1,4 @@
-5868
+5870
 121C:\Users\ozgur\Desktop\restapifront\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\lexer\prepare-tokens.js133576730119094316 0
 68C:\Users\ozgur\Desktop\restapifront\node_modules\svgo\lib\types.d.ts133576730112184309 0
 104C:\Users\ozgur\Desktop\restapifront\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\midl.c133576730115984334 0
@@ -18,12 +18,12 @@
 98C:\Users\ozgur\Desktop\restapifront\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest2.c133576730116654358 0
 105C:\Users\ozgur\Desktop\restapifront\node_modules\@swc\helpers\esm\_class_static_private_field_spec_get.js133576730120054326 0
 97C:\Users\ozgur\Desktop\restapifront\node_modules\@parcel\runtime-js\src\helpers\node\js-loader.js133576730111954386 0
-40C:\Users\ozgur\Desktop\restapifront\dist133576803178340925 1
+40C:\Users\ozgur\Desktop\restapifront\dist133576916080315595 1
 71C:\Users\ozgur\Desktop\restapifront\node_modules\ordered-binary\LICENSE133576730099454314 0
 58C:\Users\ozgur\Desktop\restapifront\node_modules\picomatch133576730106584996 1
 75C:\Users\ozgur\Desktop\restapifront\node_modules\css-tree\lib\syntax\pseudo133576730123384313 1
 89C:\Users\ozgur\Desktop\restapifront\node_modules\caniuse-lite\data\features\web-serial.js133576730137815087 0
-48C:\Users\ozgur\Desktop\restapifront\src\add.html133576762862283743 0
+48C:\Users\ozgur\Desktop\restapifront\src\add.html133576848603707853 0
 99C:\Users\ozgur\Desktop\restapifront\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts133576730117284309 1
 73C:\Users\ozgur\Desktop\restapifront\node_modules\abortcontroller-polyfill133576730108294536 1
 84C:\Users\ozgur\Desktop\restapifront\node_modules\@parcel\transformer-js\package.json133576730105064307 0
@@ -50,7 +50,7 @@
 76C:\Users\ozgur\Desktop\restapifront\node_modules\@parcel\events\package.json133576730108124330 0
 83C:\Users\ozgur\Desktop\restapifront\node_modules\source-map-js\lib\binary-search.js133576730103384619 0
 75C:\Users\ozgur\Desktop\restapifront\node_modules\@parcel\compressor-raw\lib133576730100334328 1
-54C:\Users\ozgur\Desktop\restapifront\src\css\styles.css133576802848545743 0
+54C:\Users\ozgur\Desktop\restapifront\src\css\styles.css133576836922022411 0
 78C:\Users\ozgur\Desktop\restapifront\node_modules\weak-lru-cache\LRFUExpirer.js133576730102444310 0
 71C:\Users\ozgur\Desktop\restapifront\node_modules\react-refresh\babel.js133576730100254308 0
 73C:\Users\ozgur\Desktop\restapifront\node_modules\semver\ranges\outside.js133576730111984781 0
@@ -77,11 +77,11 @@
 67C:\Users\ozgur\Desktop\restapifront\node_modules\css-tree\lib\lexer133576730125914303 1
 71C:\Users\ozgur\Desktop\restapifront\node_modules\detect-libc\.npmignore133576730100254308 0
 66C:\Users\ozgur\Desktop\restapifront\node_modules\nth-check\lib\esm133576730111224341 1
-42C:\Users\ozgur\Desktop\restapifront\src\js133576733200562830 1
+42C:\Users\ozgur\Desktop\restapifront\src\js133576854023646268 1
 43C:\Users\ozgur\Desktop\restapifront\src\css133576733355482371 1
 78C:\Users\ozgur\Desktop\restapifront\node_modules\@parcel\workers\src\Handle.js133576730110225350 0
 63C:\Users\ozgur\Desktop\restapifront\node_modules\csso\cjs\clean133576730114084315 1
-50C:\Users\ozgur\Desktop\restapifront\src\index.html133576747894367838 0
+50C:\Users\ozgur\Desktop\restapifront\src\index.html133576862938766985 0
 80C:\Users\ozgur\Desktop\restapifront\node_modules\caniuse-lite\data\regions\JP.js133576730132225234 0
 47C:\Users\ozgur\Desktop\restapifront\src\om.html133576747091608413 0
 70C:\Users\ozgur\Desktop\restapifront\node_modules\safe-buffer\README.md133576730102204350 0
@@ -92,7 +92,7 @@
 74C:\Users\ozgur\Desktop\restapifront\node_modules\resolve-from\package.json133576730099468150 0
 76C:\Users\ozgur\Desktop\restapifront\node_modules\semver\ranges\intersects.js133576730110214314 0
 109C:\Users\ozgur\Desktop\restapifront\node_modules\css-select\node_modules\dom-serializer\lib\foreignNames.d.ts133576730108304346 0
-50C:\Users\ozgur\Desktop\restapifront\src\js\main.js133576803235491315 0
+50C:\Users\ozgur\Desktop\restapifront\src\js\main.js133576916079881558 0
 80C:\Users\ozgur\Desktop\restapifront\node_modules\caniuse-lite\data\regions\PN.js133576730135544315 0
 121C:\Users\ozgur\Desktop\restapifront\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\api\inheritance.schema.json133576730108164324 0
 77C:\Users\ozgur\Desktop\restapifront\node_modules\posthtml-render\changelog.md133576730102454345 0
@@ -1966,7 +1966,7 @@
 72C:\Users\ozgur\Desktop\restapifront\node_modules\csso\lib\clean\index.js133576730117054341 0
 58C:\Users\ozgur\Desktop\restapifront\node_modules\lmdb\dict133576730121444306 1
 58C:\Users\ozgur\Desktop\restapifront\node_modules\lmdb\dist133576730120834337 1
-51C:\Users\ozgur\Desktop\restapifront\dist\index.html133576793512747002 0
+51C:\Users\ozgur\Desktop\restapifront\dist\index.html133576834685963458 0
 68C:\Users\ozgur\Desktop\restapifront\node_modules\escalade\index.d.ts133576730105454311 0
 98C:\Users\ozgur\Desktop\restapifront\node_modules\caniuse-lite\data\features\css-descendant-gtgt.js133576730121404302 0
 65C:\Users\ozgur\Desktop\restapifront\node_modules\lmdb\index.d.cts133576730118704313 0
@@ -2607,7 +2607,7 @@
 80C:\Users\ozgur\Desktop\restapifront\node_modules\caniuse-lite\data\regions\IL.js133576730131084310 0
 99C:\Users\ozgur\Desktop\restapifront\node_modules\dom-serializer\node_modules\entities\lib\encode.js133576730102326311 0
 77C:\Users\ozgur\Desktop\restapifront\node_modules\domutils\lib\legacy.d.ts.map133576730108104371 0
-62C:\Users\ozgur\Desktop\restapifront\dist\index.18dbc454.js.map133576803178332457 0
+62C:\Users\ozgur\Desktop\restapifront\dist\index.18dbc454.js.map133576916080285381 0
 71C:\Users\ozgur\Desktop\restapifront\node_modules\domutils\lib\legacy.js133576730103384619 0
 80C:\Users\ozgur\Desktop\restapifront\node_modules\caniuse-lite\data\regions\ML.js133576730134484346 0
 78C:\Users\ozgur\Desktop\restapifront\node_modules\@lezer\common\dist\index.d.ts133576730106544338 0
@@ -5862,8 +5862,10 @@
 64C:\Users\ozgur\Desktop\restapifront\node_modules\.bin\semver.ps1133576730140814336 0
 62C:\Users\ozgur\Desktop\restapifront\node_modules\.bin\svgo.ps1133576730140824352 0
 80C:\Users\ozgur\Desktop\restapifront\node_modules\.bin\update-browserslist-db.cmd133576730140824352 0
-49C:\Users\ozgur\Desktop\restapifront\dist\add.html133576794961079030 0
-48C:\Users\ozgur\Desktop\restapifront\dist\om.html133576794964384663 0
-59C:\Users\ozgur\Desktop\restapifront\dist\index.77a9bc14.css133576802848918148 0
-63C:\Users\ozgur\Desktop\restapifront\dist\index.77a9bc14.css.map133576802848965605 0
-58C:\Users\ozgur\Desktop\restapifront\dist\index.18dbc454.js133576803178290978 0
+67C:\Users\ozgur\Desktop\restapifront\dist\index.18dbc454.js.11824.av133576803462280523 0
+48C:\Users\ozgur\Desktop\restapifront\dist\om.html133576834685943462 0
+59C:\Users\ozgur\Desktop\restapifront\dist\index.77a9bc14.css133576836922546944 0
+63C:\Users\ozgur\Desktop\restapifront\dist\index.77a9bc14.css.map133576836922576522 0
+49C:\Users\ozgur\Desktop\restapifront\dist\add.html133576848606341110 0
+49C:\Users\ozgur\Desktop\restapifront\src\js\add.js133576854023646268 0
+58C:\Users\ozgur\Desktop\restapifront\dist\index.18dbc454.js133576916080205359 0
