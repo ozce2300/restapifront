@@ -113,6 +113,7 @@ input, select{
     max-width: 800px;
     justify-content: space-around;
     color: red;
+    flex-direction: column;
 }
 
 form {

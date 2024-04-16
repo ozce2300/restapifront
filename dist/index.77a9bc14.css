@@ -101,6 +101,7 @@ input, select {
 
 #container-error {
   color: red;
+  flex-direction: column;
   justify-content: space-around;
   max-width: 800px;
   margin-top: 30px;

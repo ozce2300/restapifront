@@ -43,7 +43,9 @@ async function getData() {
         <strong>Startdatum:</strong> ${startDate}<br>
         <strong> Slutdatum:</strong> ${endDate} <br>
         <strong> Beskrivning av arbetet:</strong> <br>${element.description}<br> </p>
+        <button type"submit" id="radera">Radera</button>
                                  </article>`;
+                                 
     });
 }
 
@@ -54,6 +56,8 @@ let form = document.querySelector('form');
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Förhindra standardbeteende
 
+    document.getElementById("container-error").innerHTML = "";
+
     // Hämta data från formuläret
     let companyname = document.getElementById('companyname').value;
     let jobtitle = document.getElementById('jobtitle').value;
@@ -61,6 +65,31 @@ form.addEventListener('submit', function(event) {
     let startDate = document.getElementById('startdate').value;
     let endDate = document.getElementById('enddate').value;
     let description = document.getElementById('description').value;
+    
+    if(companyname === "") {
+        document.getElementById("container-error").innerHTML+= `<li>Skriv in företagsnamn</li><br>`
+    }
+
+    if(jobtitle === "") {
+        document.getElementById("container-error").innerHTML+= `<li>Skriv in jobbitetln</li><br>`
+    }
+
+    if(location === "") {
+        document.getElementById("container-error").innerHTML+= `<li>Skriv in plats</li><br>`
+    }
+
+    if(startDate === "") {
+        document.getElementById("container-error").innerHTML+= `<li>Skriv in startdatum</li><br>`
+    }
+
+    if(endDate === "") {
+        document.getElementById("container-error").innerHTML+= `<li>Skriv in slutdatum</li><br>`
+    }
+
+    if(description === "") {
+        document.getElementById("container-error").innerHTML+= `<li>Skriv in beskrivning</li><br>`
+    }
+
 
 
     // Skapa objekt med data
@@ -93,4 +122,8 @@ async function createCv(cv) {
 
     const data = await response.json();
     console.log(data);
+}
+
+async function deleteCv () {
+    
 }
