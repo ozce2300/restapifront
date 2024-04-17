@@ -585,18 +585,13 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"1SICI":[function(require,module,exports) {
 "use strict";
-// Hämta in meny-knapparna
 let openBtn = document.getElementById("open-menu");
 let closeBtn = document.getElementById("close-menu");
-//eventlyssnare
 openBtn.addEventListener("click", toggleMenu);
 closeBtn.addEventListener("click", toggleMenu);
-//Toggla fram navigeringsmenyn
 function toggleMenu() {
     let navMenuEl = document.getElementById("nav-menu");
-    //hämtar in css för menyn
     let style = window.getComputedStyle(navMenuEl);
-    //koll om navigering är synlig eller ej, ändrar display block/none
     if (style.display === "none") navMenuEl.style.display = "block";
     else navMenuEl.style.display = "none";
 }
@@ -606,26 +601,43 @@ async function getData() {
     const response = await fetch(url);
     const data = await response.json();
     let mainEvent = document.getElementById("main-container");
+    if (!mainEvent) return;
     data.forEach((element)=>{
         const startDate = new Date(element.startdate).toISOString().split("T")[0];
         const endDate = new Date(element.enddate).toISOString().split("T")[0];
-        mainEvent.innerHTML += ` <article id="articleId"><p> <strong>F\xf6retagsnamn: </strong>${element.companyname}<br> 
+        const article = document.createElement("article");
+        article.innerHTML = `<p> <strong>F\xf6retagsnamn: </strong>${element.companyname}<br> 
         <strong>Jobbtitel:</strong> ${element.jobtitle}<br> 
-        <strong>   Plats: </strong>${element.location}<br>
+        <strong>Plats: </strong>${element.location}<br>
         <strong>Startdatum:</strong> ${startDate}<br>
-        <strong> Slutdatum:</strong> ${endDate} <br>
-        <strong> Beskrivning av arbetet:</strong> <br>${element.description}<br> </p>
-        <button type"submit" id="radera">Radera</button>
-                                 </article>`;
+        <strong>Slutdatum:</strong> ${endDate} <br>
+        <strong>Beskrivning av arbetet:</strong> <br>${element.description}<br> </p>
+        <button type="button" class="radera" data-id="${element.id}">Radera</button>`;
+        const deleteButton = article.querySelector(".radera");
+        deleteButton.addEventListener("click", function() {
+            const cvId = deleteButton.getAttribute("data-id");
+            deleteCv(cvId);
+        });
+        mainEvent.appendChild(article);
     });
 }
-// Hämta formuläret
+async function deleteCv(id) {
+    const response = await fetch(`${url}${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    });
+    if (response.ok) {
+        // Ta bort det aktuella CV-postelementet från DOM:en
+        const article = document.querySelector(`[data-id="${id}"]`).parentElement;
+        article.parentNode.removeChild(article);
+    } else console.log("Kunde inte radera CV-post.");
+}
 let form = document.querySelector("form");
-// Lägg till eventlyssnare för submit
-form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Förhindra standardbeteende
+if (form) form.addEventListener("submit", function(event) {
+    event.preventDefault();
     document.getElementById("container-error").innerHTML = "";
-    // Hämta data från formuläret
     let companyname = document.getElementById("companyname").value;
     let jobtitle = document.getElementById("jobtitle").value;
     let location = document.getElementById("location").value;
@@ -633,12 +645,11 @@ form.addEventListener("submit", function(event) {
     let endDate = document.getElementById("enddate").value;
     let description = document.getElementById("description").value;
     if (companyname === "") document.getElementById("container-error").innerHTML += `<li>Skriv in f\xf6retagsnamn</li><br>`;
-    if (jobtitle === "") document.getElementById("container-error").innerHTML += `<li>Skriv in jobbitetln</li><br>`;
+    if (jobtitle === "") document.getElementById("container-error").innerHTML += `<li>Skriv in jobbtitel</li><br>`;
     if (location === "") document.getElementById("container-error").innerHTML += `<li>Skriv in plats</li><br>`;
     if (startDate === "") document.getElementById("container-error").innerHTML += `<li>Skriv in startdatum</li><br>`;
     if (endDate === "") document.getElementById("container-error").innerHTML += `<li>Skriv in slutdatum</li><br>`;
     if (description === "") document.getElementById("container-error").innerHTML += `<li>Skriv in beskrivning</li><br>`;
-    // Skapa objekt med data
     let cv = {
         companyname: companyname,
         jobtitle: jobtitle,
@@ -647,11 +658,8 @@ form.addEventListener("submit", function(event) {
         endDate: endDate,
         description: description
     };
-    // Skicka data till backend
     console.log("cv-objektet:", cv);
     createCv(cv);
-    console.log("startDate:", startDate);
-    console.log("endDate:", endDate);
 });
 async function createCv(cv) {
     const response = await fetch(url, {
@@ -661,10 +669,17 @@ async function createCv(cv) {
         },
         body: JSON.stringify(cv)
     });
+    if (response.ok) {
+        document.getElementById("companyname").value = "";
+        document.getElementById("jobtitle").value = "";
+        document.getElementById("location").value = "";
+        document.getElementById("startdate").value = "";
+        document.getElementById("enddate").value = "";
+        document.getElementById("description").value = "";
+    }
     const data = await response.json();
     console.log(data);
 }
-async function deleteCv() {}
 
 },{}]},["j2YDk","1SICI"], "1SICI", "parcelRequirec3f4")
 

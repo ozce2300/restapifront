@@ -33,7 +33,7 @@ header {
   display: flex;
 }
 
-#articleId {
+.articleId {
   border: 2px solid #adff2f;
   max-width: 500px;
   margin-bottom: 30px;
@@ -75,8 +75,9 @@ input, select {
   margin-top: 10px;
 }
 
-#radera {
+.radera {
   color: #fff;
+  cursor: pointer;
   background-color: red;
   border-radius: 8px;
   margin-top: 10px;
